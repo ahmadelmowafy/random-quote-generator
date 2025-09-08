@@ -4,6 +4,21 @@ const quotes = [
   "Experience is the name everyone gives to their mistakes.",
   "In order to be irreplaceable, one must always be different.",
   "JavaScript is the duct tape of the Internet.",
+  "Programs must be written for people to read, and only incidentally for machines to execute.",
+  "The best error message is the one that never shows up.",
+  "Simplicity is the soul of efficiency.",
+  "Before software can be reusable it first has to be usable.",
+  "Code never lies, comments sometimes do.",
+  "Don’t comment bad code — rewrite it.",
+  "Programming isn't about what you know; it's about what you can figure out.",
+  "Make it work, make it right, make it fast.",
+  "Talk is cheap. Show me the code.",
+  "Sometimes it pays to stay in bed on Monday, rather than spending the rest of the week debugging Monday’s code.",
+  "Walking on water and developing software from a specification are easy if both are frozen.",
+  "Testing leads to failure, and failure leads to understanding.",
+  "If debugging is the process of removing bugs, then programming must be the process of putting them in.",
+  "Computers are fast; programmers keep them slow.",
+  "Deleted code is debugged code.",
 ];
 
 document.getElementById("generate").addEventListener("click", () => {
