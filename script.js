@@ -23,5 +23,7 @@ const quotes = [
 
 document.getElementById("generate").addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
-  document.getElementById("quote").textContent = quotes[randomIndex];
+
+  const quoteContainer = document.getElementById("quote-container");
+  quoteContainer.textContent = quotes[randomIndex];
 });
