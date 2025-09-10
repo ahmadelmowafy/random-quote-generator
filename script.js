@@ -21,14 +21,16 @@ const quotes = [
   "Deleted code is debugged code.",
 ];
 
-document.getElementById("generate").addEventListener("click", () => {
+const generateBtn = document.getElementById("generate");
+const clearBtn = document.getElementById("clear");
+const quoteContainer = document.getElementById("quote-container");
+
+generateBtn.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
 
-  const quoteContainer = document.getElementById("quote-container");
   quoteContainer.textContent = quotes[randomIndex];
 });
 
-document.getElementById("clear").addEventListener("click", () => {
-  const quoteContainer = document.getElementById("quote-container");
+clearBtn.addEventListener("click", () => {
   quoteContainer.textContent = "";
 });
