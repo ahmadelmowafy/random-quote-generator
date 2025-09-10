@@ -27,3 +27,8 @@ document.getElementById("generate").addEventListener("click", () => {
   const quoteContainer = document.getElementById("quote-container");
   quoteContainer.textContent = quotes[randomIndex];
 });
+
+document.getElementById("clear").addEventListener("click", () => {
+  const quoteContainer = document.getElementById("quote-container");
+  quoteContainer.textContent = "";
+});
