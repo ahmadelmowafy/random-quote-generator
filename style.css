@@ -1,31 +1,58 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   padding: 20px;
   background-color: #fff;
   color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  transition: background-color 0.5s ease;
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #007acc;
+  text-align: center;
 }
 
 #click {
   font-size: 1.1rem;
   margin: 15px 0;
+  color: #444;
 }
 
 #quote-container {
-  margin-top: 10px;
-  font-size: 1.1rem;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  padding: 15px;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 button {
-  padding: 8px 16px;
+  padding: 10px 20px;
+  margin: 8px;
   font-size: 1rem;
   background-color: #007acc;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #005f99;
 }
