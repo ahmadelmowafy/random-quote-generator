@@ -28,8 +28,11 @@ const quoteContainer = document.getElementById("quote-container");
 generateBtn.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   quoteContainer.textContent = quotes[randomIndex];
+  const randomColor = `hsl(${Math.floor(Math.random() * 360)}, 70%, 80%)`;
+  document.body.style.backgroundColor = randomColor;
 });
 
 clearBtn.addEventListener("click", () => {
   quoteContainer.textContent = "";
+  document.body.style.backgroundColor = "#fff";
 });
