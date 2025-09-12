@@ -29,6 +29,8 @@ const generateBtn = document.getElementById("generate");
 const clearBtn = document.getElementById("clear");
 const quoteContainer = document.getElementById("quote-container");
 
+quoteContainer.textContent = "Your wisdom will appear here...";
+
 generateBtn.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * quotes.length);
   quoteContainer.textContent = quotes[randomIndex];
@@ -37,6 +39,6 @@ generateBtn.addEventListener("click", () => {
 });
 
 clearBtn.addEventListener("click", () => {
-  quoteContainer.textContent = "";
+  quoteContainer.textContent = "Your wisdom will appear here...";
   document.body.style.backgroundColor = "#fff";
 });
