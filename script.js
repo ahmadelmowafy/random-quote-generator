@@ -21,6 +21,10 @@ const quotes = [
   "Deleted code is debugged code.",
 ];
 
+quotes.push(
+  "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+);
+
 const generateBtn = document.getElementById("generate");
 const clearBtn = document.getElementById("clear");
 const quoteContainer = document.getElementById("quote-container");
