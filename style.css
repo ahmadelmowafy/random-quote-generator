@@ -61,3 +61,7 @@ button:hover {
 button:active {
   transform: scale(0.96);
 }
+
+#clear {
+  margin-top: 12px;
+}
