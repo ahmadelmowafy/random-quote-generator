@@ -43,6 +43,7 @@ h1 {
 button {
   padding: 10px 20px;
   margin: 8px;
+  letter-spacing: 0.5px;
   font-size: 1rem;
   background-color: #007acc;
   color: #fff;
