@@ -23,7 +23,8 @@ const quotes = [
 
 quotes.push(
   "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
-  "Simplicity is prerequisite for reliability."
+  "Simplicity is prerequisite for reliability.",
+  "The only way to learn a new programming language is by writing programs in it."
 );
 
 const generateBtn = document.getElementById("generate");
