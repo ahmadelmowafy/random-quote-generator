@@ -28,8 +28,9 @@ quotes.push(
 );
 
 const generateBtn = document.getElementById("generate");
-const clearBtn = document.getElementById("clear");
 const quoteContainer = document.getElementById("quote-container");
+const copyBtn = document.getElementById("copy");
+const clearBtn = document.getElementById("clear");
 
 quoteContainer.textContent = "Your wisdom will appear here...";
 
@@ -43,4 +44,10 @@ generateBtn.addEventListener("click", () => {
 clearBtn.addEventListener("click", () => {
   quoteContainer.textContent = "Your wisdom will appear here...";
   document.body.style.backgroundColor = "#fff";
+});
+
+copyBtn.addEventListener("click", () => {
+  navigator.clipboard.writeText(quoteContainer.textContent).then(() => {
+    alert("Quote copied to clipboard! 📋");
+  });
 });
